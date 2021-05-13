@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+       $(document).ready(function(){
+           $(".btn").hover(function(){
+               $(this).css({
+                   "background" : "blue",
+                   "transition" : "0.7s"
+               })
+           },function(){
+               $(this).css({
+                "background" : "yellow",
+                "transition" : "0.5s"
+               })
+           })
+            
+    });
+    </script>
+<style>
+    .btn{
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        background: rgb(211, 11, 11);
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+</style>    
+<body>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+    <div class="btn">메뉴</div>
+</body>
+</html>
